@@ -1,10 +1,3 @@
-carb_min = 0
-carb_max = 0
-cal_min = 0
-cal_max = 0
-protein_min = 0
-protein_max = 0
-    
 food= {
     "Caesar Salad" : {
         "description": " A salad with crunchy croutons, shaved parmesan, cheese, and caesar salad dressing",
@@ -299,15 +292,7 @@ food= {
 }
 
 def info():
-    global cal_min
-    global cal_max
-    global carb_min
-    global carb_max
-    global protein_min
-    global protein_max
-    
-    
-    print("Hello! Thank you for using our app to find the best meal! Let's start with getting some info!")
+    print("Hello! Thank you for using our app to find the best meal! Let's start with getting some info! How old are you?")
     while True:
         try:
             age = int(input("How old are you? "))
@@ -410,90 +395,66 @@ def info():
         cal_min, cal_max = 500, 850
         carb_min, carb_max = 55, 85
         protein_min, protein_max = 30, 35
-        print("Your goal calories=",cal_min,"-",cal_max)
-        print("")
-        print("Your goal Carbs=",carb_min,"-",carb_max)
-        print("")
-        print("Your goal Protein=" ,protein_min,"-",protein_max)\
-        print("_" * 40)
+        print("Your goal calories=",cal_min,"-",cal_max,
+              
+              "Your goal Carbs=",carb_min,"-",carb_max,
+              
+              "Your goal Protein=" ,protein_min,"-",protein_max)
     else:
         print("No data on your age and gender")
-    
 
 info()
 
 def activities():
-    global new_cal_min
-    global new_cal_max
-    global new_carb_min
-    global new_carb_max
-    global new_protein_min
-    global new_protein_max
-
-    activeness = input("How active will you be today? (not at all (no activities today)/ sedentary (walking a lot, lots of things to do)/ moderately (one sport or physical activity)/ very active (2 or more activities requiring physical activity)").lower()
-    if activeness == "sedentary":
-       new_carb_min = carb_min * 1.2
-       new_carb_max = carb_max * 1.2
-       new_cal_min = cal_min * 1.2
-       new_cal_max = cal_max * 1.2
-       new_protein_min = protein_min * 1.2
-       new_protein_max = protein_max * 1.2
-       print("Now you need:")
-       print(new_cal_min, "-", new_cal_max, "calories")
-       print("")
-       print(new_carb_min, "-", new_carb_max, "carbs")
-       print("")
-       print(new_protein_min, "-", new_protein_max, "protein")
+    activities = input("How active will you be today? (not at all/ sedentary/ moderately/ very active)").lower
+    if activities == "sedentary":
+       new_carb_min == carb_min * 1.2
+       new_carb_max == carb_max * 1.2
+       new_cal_min == cal_min * 1.2
+       new_cal_max == cal_max * 1.2
+       new_protein_min == protein_min * 1.2
+       new_protein_max == protein_max * 1.2
+       print("Now you need:", new_cal_min, "-", new_cal_max, "calories",
+             new_carb_min, "-", new_carb_max, "carbs",
+             new_protein_min, "-", new_protein_max, "protein")
    
-    elif activeness == "moderately":
-       new_carb_min = carb_min * 1.55
-       new_carb_max = carb_max * 1.55
-       new_cal_min = cal_min * 1.55
-       new_cal_max = cal_max * 1.55
-       new_protein_min = protein_min * 1.55
-       new_protein_max = protein_max * 1.55
-       print("Now you need:")
-       print(new_cal_min, "-", new_cal_max, "calories")
-       print("")
-       print(new_carb_min, "-", new_carb_max, "carbs")
-       print("")
-       print(new_protein_min, "-", new_protein_max, "protein")
+    elif activities == "moderately":
+       new_carb_min == carb_min * 1.55
+       new_carb_max == carb_max * 1.55
+       new_cal_min == cal_min * 1.55
+       new_cal_max == cal_max * 1.55
+       new_protein_min == protein_min * 1.55
+       new_protein_max == protein_max * 1.55
+       print("Now you need:", new_cal_min, "-", new_cal_max, "calories",
+             new_carb_min, "-", new_carb_max, "carbs",
+             new_protein_min, "-", new_protein_max, "protein")
     
-    elif activeness == "very active":
-        new_carb_min = carb_min * 1.725
-        new_carb_max = carb_max * 1.725
-        new_cal_min = cal_min * 1.725
-        new_cal_max = cal_max * 1.725
-        new_protein_min = protein_min * 1.725
-        new_protein_max = protein_max * 1.725
-        print("Now you need:")
-        print(new_cal_min, "-", new_cal_max, "calories")
-        print("")
-        print(new_carb_min, "-", new_carb_max, "carbs")
-        print("")
-        print(new_protein_min, "-", new_protein_max, "protein")
+    elif activities == "very active":
+        new_carb_min == carb_min * 1.725
+        new_carb_max == carb_max * 1.725
+        new_cal_min == cal_min * 1.725
+        new_cal_max == cal_max * 1.725
+        new_protein_min == protein_min * 1.725
+        new_protein_max == protein_max * 1.725
+        print("Now you need:", new_cal_min, "-", new_cal_max, "calories",
+            new_carb_min, "-", new_carb_max, "carbs",
+            new_protein_min, "-", new_protein_max, "protein")
         
     else:
-        new_carb_min = carb_min 
-        new_carb_max = carb_max 
-        new_cal_min = cal_min 
-        new_cal_max = cal_max 
-        new_protein_min = protein_min 
-        new_protein_max = protein_max 
-        print("You still need:")
-        print(new_cal_min, "-", new_cal_max, "calories")
-        print("")
-        print(new_carb_min, "-", new_carb_max, "carbs")
-        print("")
-        print(new_protein_min, "-", new_protein_max, "protein")
+        new_carb_min == carb_min 
+        new_carb_max == carb_max 
+        new_cal_min == cal_min 
+        new_cal_max == cal_max 
+        new_protein_min == protein_min 
+        new_protein_max == protein_max 
+        print("You still need:", new_cal_min, "-", new_cal_max, "calories",
+            new_carb_min, "-", new_carb_max, "carbs",
+            new_protein_min, "-", new_protein_max, "protein")
     
     
+   
     
-       
 activities()
-
-
-
 
 
     
