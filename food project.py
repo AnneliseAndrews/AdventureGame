@@ -415,7 +415,7 @@ def info():
         print("Your goal Carbs=",carb_min,"-",carb_max)
         print("")
         print("Your goal Protein=" ,protein_min,"-",protein_max)\
-        print("_" * 40)
+        print("-" * 40)
     else:
         print("No data on your age and gender")
     
