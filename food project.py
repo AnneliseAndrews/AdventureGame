@@ -320,92 +320,102 @@ def info():
         cal_min, cal_max = 250, 400
         carb_min, carb_max = 30, 45 
         protein_min, protein_max = 5, 7
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif age in [4, 5, 6, 7, 8] and gender == "female":
         cal_min, cal_max = 300, 500
         carb_min, carb_max = 35, 50
         protein_min, protein_max = 7, 12
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif age in [4, 5, 6, 7, 8] and gender == "male":
         cal_min, cal_max = 300, 550
         carb_min, carb_max = 40, 55
         protein_min, protein_max = 8, 13
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif age in [9, 10, 11, 12, 13] and gender == "female":
         cal_min, cal_max = 350, 650
         carb_min, carb_max = 45, 65
         protein_min, protein_max = 12, 18
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif age in [9, 10, 11, 12, 13] and gender == "male":
         cal_min, cal_max = 400, 750
         carb_min, carb_max = 50, 85
         protein_min, protein_max = 15, 20
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif age in [14, 15, 16, 17, 18] and gender == "female":
         cal_min, cal_max = 450, 800
         carb_min, carb_max = 55, 75
         protein_min, protein_max = 15, 20
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif age in [14, 15, 16, 17, 18] and gender== "male":
         cal_min, cal_max = 500, 1000
         carb_min, carb_max = 60, 100
         protein_min, protein_max = 20, 25
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif 19<= age <= 59 and gender== "female":
         cal_min, cal_max = 450, 800
         carb_min, carb_max = 50, 75
         protein_min, protein_max = 20, 30
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif 19<= age <= 59 and gender== "male":
         cal_min, cal_max = 550, 1000
         carb_min, carb_max = 60, 95
         protein_min, protein_max = 25, 35
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif 60<= age <= 120 and gender== "female":
         cal_min, cal_max = 400, 700
         carb_min, carb_max = 45, 70
         protein_min, protein_max = 25, 35
-        print("Your goal calories=",cal_min,"-",cal_max,
-              
-              "Your goal Carbs=",carb_min,"-",carb_max,
-              
-              "Your goal Protein=" ,protein_min,"-",protein_max)
+        print("Your goal calories=",cal_min,"-",cal_max)
+        print("")
+        print("Your goal Carbs=",carb_min,"-",carb_max)
+        print("")
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     elif 60<= age <= 120 and gender== "male":
         cal_min, cal_max = 500, 850
         carb_min, carb_max = 55, 85
@@ -414,8 +424,8 @@ def info():
         print("")
         print("Your goal Carbs=",carb_min,"-",carb_max)
         print("")
-        print("Your goal Protein=" ,protein_min,"-",protein_max)\
-        print("-" * 40)
+        print("Your goal Protein=" ,protein_min,"-",protein_max)
+        print("-" *40)
     else:
         print("No data on your age and gender")
     
@@ -423,41 +433,36 @@ def info():
 info()
 
 def activities():
-    global new_cal_min
-    global new_cal_max
-    global new_carb_min
-    global new_carb_max
-    global new_protein_min
-    global new_protein_max
+    
 
     activeness = input("How active will you be today? (not at all (no activities today)/ sedentary (walking a lot, lots of things to do)/ moderately (one sport or physical activity)/ very active (2 or more activities requiring physical activity)").lower()
     if activeness == "sedentary":
-       new_carb_min = carb_min * 1.2
-       new_carb_max = carb_max * 1.2
-       new_cal_min = cal_min * 1.2
-       new_cal_max = cal_max * 1.2
-       new_protein_min = protein_min * 1.2
-       new_protein_max = protein_max * 1.2
-       print("Now you need:")
-       print(new_cal_min, "-", new_cal_max, "calories")
-       print("")
-       print(new_carb_min, "-", new_carb_max, "carbs")
-       print("")
-       print(new_protein_min, "-", new_protein_max, "protein")
+        new_carb_min = carb_min * 1.2
+        new_carb_max = carb_max * 1.2
+        new_cal_min = cal_min * 1.2
+        new_cal_max = cal_max * 1.2
+        new_protein_min = protein_min * 1.2
+        new_protein_max = protein_max * 1.2
+        print("Now you need:")
+        print(new_cal_min, "-", new_cal_max, "calories")
+        print("")
+        print(new_carb_min, "-", new_carb_max, "carbs")
+        print("")
+        print(new_protein_min, "-", new_protein_max, "protein")
    
     elif activeness == "moderately":
-       new_carb_min = carb_min * 1.55
-       new_carb_max = carb_max * 1.55
-       new_cal_min = cal_min * 1.55
-       new_cal_max = cal_max * 1.55
-       new_protein_min = protein_min * 1.55
-       new_protein_max = protein_max * 1.55
-       print("Now you need:")
-       print(new_cal_min, "-", new_cal_max, "calories")
-       print("")
-       print(new_carb_min, "-", new_carb_max, "carbs")
-       print("")
-       print(new_protein_min, "-", new_protein_max, "protein")
+        new_carb_min = carb_min * 1.55
+        new_carb_max = carb_max * 1.55
+        new_cal_min = cal_min * 1.55
+        new_cal_max = cal_max * 1.55
+        new_protein_min = protein_min * 1.55
+        new_protein_max = protein_max * 1.55
+        print("Now you need:")
+        print(new_cal_min, "-", new_cal_max, "calories")
+        print("")
+        print(new_carb_min, "-", new_carb_max, "carbs")
+        print("")
+        print(new_protein_min, "-", new_protein_max, "protein")
     
     elif activeness == "very active":
         new_carb_min = carb_min * 1.725
@@ -491,6 +496,15 @@ def activities():
     
        
 activities()
+
+def recommend():
+    print("Now let's recomend some food options to best support you today!\n")
+    print(" I will recomend something and if it does not sound good you can say next!")
+    if calories in nutrition facts in food >= new_cal_min
+        print("/n" + "-" * 40)
+        print(f"description: ")
+
+
 
 
 
