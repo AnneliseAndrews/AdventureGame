@@ -498,17 +498,104 @@ def activities():
 activities()
 
 def recommend():
-    print("Now let's recomend some food options to best support you today!\n")
-    print(" I will recomend something and if it does not sound good you can say next!")
-    if calories in nutrition facts in food >= new_cal_min
+    while food_recommending == True: 
+        print("Now let's recomend some food options to best support you today!\n")
+        print(" I will recomend something and if it does not sound good you can say 'new option' or 'groery list' or 'thanks'!")
+    if calories in nutrition facts in food >= new_cal_min and carbs in nutrition facts in food >= new_carb_min and protein in nutrition facts in food >= new_protein_min:
         print("/n" + "-" * 40)
-        print(f"description: ")
-
-
-
-
-
-
+        print(f"Description: {food[current_food]['description']")
+        print(f"Ingrediants: {food[current_food]['ingredietns']")
+        print(f"Nutrition Facts: {food[current_food]['nutrition facts']")
+        print("Link to Recipe: {food[current_food]['link to recipe']")\
+        print("/n" + "-" * 40)
+    elif calories in nutrition facts in food < new_cal_min and carbs in nutrition facts in food >= new_carb_min and protein in nutrition facts in food >= new_protein_min:
+        final_cal = new_cal_min - calories in nutrition facts in food * -1
+        final_carb = new_carb_min - carb in nutrition facts in food * -1
+        final_protien = new_protein_min - protein in nutrition facts in food * -1
+        print("/n" + "-" * 40)
+        print(f"Description: {food[current_food]['description']")
+        print(f"Ingrediants: {food[current_food]['ingredietns']")
+        print(f"Nutrition Facts: {food[current_food]['nutrition facts']")
+        print("Link to Recipe: {food[current_food]['link to recipe']")\
+        print("/n" + "-" * 40)
+        print("There are not enough calories in most main meals to get your calories so eat some extra sides with a lot of calories.")
+        print("")
+        print("You need to get", final_cal, "more calories")
+        print("")
+        print("If you would like to add to grocery list type the side. If not type okay.")
+        print("")
+        print("Good options each have different amounts of calories:")
+        side = input("loaded sweet potato 400, peanut butter and apples 95, white rice 389, wings 90, green beans 44").lower
+        if side == "loaded sweet potato" or "peanut butter and apples" or "white rice" or "wings" or "green beans":
+            append.grocery_list
+        else:
+            print("")
+    elif calories in nutrition facts in food >= new_cal_min and carbs in nutrition facts in food < new_carb_min and protein in nutrition facts in food >= new_protein_min:
+        final_cal = new_cal_min - calories in nutrition facts in food * -1
+        final_carb = new_carb_min - carb in nutrition facts in food * -1
+        final_protien = new_protein_min - protein in nutrition facts in food * -1
+        print("/n" + "-" * 40)
+        print(f"Description: {food[current_food]['description']")
+        print(f"Ingrediants: {food[current_food]['ingredietns']")
+        print(f"Nutrition Facts: {food[current_food]['nutrition facts']")
+        print("Link to Recipe: {food[current_food]['link to recipe']")\
+        print("/n" + "-" * 40)
+        print("There are not enough carbs in most main meals to get your carbs so eat some extra sides with a lot of carbs.")
+        print("")
+        print("You need to get", final_carb, "more carbs")
+        print("")
+        print("If you would like to add to grocery list type the side. If not type okay.")
+        print("")
+        print("Good options each have different amounts of calories:")
+        side = input("loaded sweet potato 34, peanut butter and apples 26, white rice 38, rolls 14 per roll, pineapple 21-22")
+        if input == "loaded sweet potato" or "peanut butter and apples" or "white rice" or "rolls" or "pineapple":
+            append.grocery_list
+        else:
+            print("")
+    elif calories in nutrition facts in food >= new_cal_min and carbs in nutrition facts in food >= new_carb_min and protein in nutrition facts in food < new_protein_min:
+        final_cal = new_cal_min - calories in nutrition facts in food * -1
+        final_carb = new_carb_min - carb in nutrition facts in food * -1
+        final_protien = new_protein_min - protein in nutrition facts in food * -1
+        print("/n" + "-" * 40)
+        print(f"Description: {food[current_food]['description']")
+        print(f"Ingrediants: {food[current_food]['ingredietns']")
+        print(f"Nutrition Facts: {food[current_food]['nutrition facts']")
+        print("Link to Recipe: {food[current_food]['link to recipe']")\
+        print("/n" + "-" * 40)
+        print("There are not enough protien in most main meals to get your protein so eat some extra sides with a lot of protein.")
+        print("")
+        print("You need to get", final_protein, "more protein")
+        print("")
+        print("If you would like to add to grocery list type the side. If not type okay.")
+        print("")
+        print("Good options each have different amounts of calories:")
+        side = input("loaded sweet potato 2, peanut butter and apples 8, beef stick 8, banana 1, wings 17, broccoli 4,  21")
+        if input == "loaded sweet potato" or "peanut butter and apples" or "beef stick" or "banana" or "wings" or "broccoli":
+            append.grocery_list
+        else:
+            print("")
+    elif calories in nutrition facts in food < new_cal_min and carbs in nutrition facts in food < new_carb_min and protein in nutrition facts in food >= new_protein_min:
+        recommend_new()
+    elif calories in nutrition facts in food >= new_cal_min and carbs in nutrition facts in food < new_carb_min and protein in nutrition facts in food < new_protein_min:
+        recommend_new()
+    elif calories in nutrition facts in food < new_cal_min and carbs in nutrition facts in food >= new_carb_min and protein in nutrition facts in food < new_protein_min:
+        recommend_new()
+    else: 
+        recommend_new()
+    command = user_input
+    if command == "New option"
+        reccomend()
+        elif command == "grocery list"
+        grocery_list = print(f"Groceries iclude") and print("{food[current_food][ingrediants]")
+    else:
+        print("Thnaks for using our app!")
+        food_recommending = False
+reccomend()
+        
+def reccomend_new()
+    reccomend()
+    
+    
 
     
     
